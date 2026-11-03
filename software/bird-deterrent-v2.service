@@ -1,0 +1,18 @@
+[Unit]
+Description=PYNQ OV5640 Bird Deterrent v2.0 MCP4725
+After=multi-user.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/xilinx/jupyter_notebooks/A_bird_system_v2.0_mcp4725_20261102_release
+Environment=HOME=/home/xilinx
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/bin/bash -lc 'exec /usr/local/share/pynq-venv/bin/python3 run_pynq_integrated_loop.py model_v2_armv7_no_xnnpack.eim sounds/warning_1_sweep.wav sounds/warning_2_alternating.wav sounds/warning_3_irregular.wav --monitor-threshold 0.80 --recheck-threshold 0.60 --dac-address 0x60 --audio-volume 0.20 --log "logs/closed_loop_$(date +%%Y%%m%%d_%%H%%M%%S).csv"'
+Restart=on-failure
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

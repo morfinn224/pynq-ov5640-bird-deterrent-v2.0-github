@@ -1,0 +1,9 @@
+智能视觉驱鸟系统 v2.0 代码提交检查表
+
+[ ] 上传“pynq-ov5640-bird-deterrent-v2.0-all-code.rar”，文件小于 200 MB
+[ ] GitHub 仓库设置为 Public
+[ ] GitHub 仓库包含 software、fpga、docs、README.md、LICENSE
+[ ] 使用未登录浏览器确认 GitHub 链接可以访问
+[ ] 将仓库首页 URL 填入比赛平台
+[ ] 不上传密码、令牌、私钥、姓名、学校和指导教师信息
+[ ] 保留 SHA256SUMS.txt，便于交接和完整性核验

@@ -1,0 +1,90 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.24316",
+   "Default View_TopLeft":"402,1014",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2570 -y 720 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2570 -y 890 -defaultsOSRD
+preplace port port-id_cam_pclk -pg 1 -lvl 0 -x -50 -y 1340 -defaultsOSRD
+preplace port port-id_cam_vsync -pg 1 -lvl 0 -x -50 -y 1380 -defaultsOSRD
+preplace port port-id_cam_href -pg 1 -lvl 0 -x -50 -y 1400 -defaultsOSRD
+preplace port port-id_cam_scl -pg 1 -lvl 7 -x 2570 -y 1160 -defaultsOSRD
+preplace port port-id_cam_sda -pg 1 -lvl 7 -x 2570 -y 1180 -defaultsOSRD
+preplace port port-id_cam_reset_n -pg 1 -lvl 7 -x 2570 -y 1220 -defaultsOSRD
+preplace port port-id_cam_pwdn -pg 1 -lvl 7 -x 2570 -y 1200 -defaultsOSRD
+preplace portBus cam_d -pg 1 -lvl 0 -x -50 -y 1360 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 770 -defaultsOSRD
+preplace inst axi_bram_ctrl_old_0 -pg 1 -lvl 3 -x 1130 -y 860 -defaultsOSRD
+preplace inst axi_bram_ctrl_new_0 -pg 1 -lvl 3 -x 1130 -y 440 -defaultsOSRD
+preplace inst blk_mem_gen_old_0 -pg 1 -lvl 4 -x 1670 -y 1030 -defaultsOSRD
+preplace inst blk_mem_gen_new_0 -pg 1 -lvl 4 -x 1670 -y 520 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -x 650 -y 560 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 650 -y 840 -defaultsOSRD
+preplace inst const_zero32 -pg 1 -lvl 3 -x 1130 -y 320 -defaultsOSRD
+preplace inst const_zero4 -pg 1 -lvl 3 -x 1130 -y 220 -defaultsOSRD
+preplace inst bram_addr_concat_0 -pg 1 -lvl 3 -x 1130 -y 80 -defaultsOSRD
+preplace inst const_zero2 -pg 1 -lvl 2 -x 650 -y 60 -defaultsOSRD
+preplace inst const_zero20 -pg 1 -lvl 2 -x 650 -y 160 -defaultsOSRD
+preplace inst rgb565_axis_source_0 -pg 1 -lvl 4 -x 1670 -y 1350 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 5 -x 2010 -y 1370 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 6 -x 2350 -y 1400 -defaultsOSRD
+preplace inst axi_smc_vdma -pg 1 -lvl 5 -x 2010 -y 70 -defaultsOSRD
+preplace inst ov5640_camera_fronte_0 -pg 1 -lvl 3 -x 1130 -y 1360 -defaultsOSRD
+preplace inst frame_diff_ctrl_axi_0 -pg 1 -lvl 3 -x 1130 -y 650 -defaultsOSRD
+preplace netloc Net 1 3 4 1450J 1170 1840J 1160 NJ 1160 NJ
+preplace netloc Net1 1 3 4 1440J 1180 NJ 1180 NJ 1180 NJ
+preplace netloc axi_vdma_0_s2mm_introut 1 0 7 -20 950 NJ 950 NJ 950 1350J 880 NJ 880 NJ 880 2520
+preplace netloc blk_mem_gen_new_0_doutb 1 2 2 930 160 1500J
+preplace netloc blk_mem_gen_old_0_doutb 1 2 2 910 1020 1410J
+preplace netloc bram_addr_concat_0_dout1 1 3 1 1490 80n
+preplace netloc cam_d_0_1 1 0 3 NJ 1360 NJ 1360 850J
+preplace netloc cam_href_0_1 1 0 3 NJ 1400 NJ 1400 820J
+preplace netloc cam_pclk_0_1 1 0 3 -30J 1350 NJ 1350 NJ
+preplace netloc cam_vsync_0_1 1 0 3 NJ 1380 NJ 1380 820J
+preplace netloc const_zero20_dout1 1 2 1 860J 100n
+preplace netloc const_zero2_dout1 1 2 1 NJ 60
+preplace netloc const_zero32_dout 1 3 1 1470 320n
+preplace netloc const_zero4_dout 1 3 1 1460 220n
+preplace netloc frame_diff_ctrl_axi_0_bram_word_addr 1 2 2 930 0 1350
+preplace netloc frame_diff_ctrl_axi_0_new_bram_en 1 3 1 1360 560n
+preplace netloc frame_diff_ctrl_axi_0_old_bram_en 1 3 1 1450 630n
+preplace netloc ov5640_camera_fronte_0_cam_pwdn 1 3 4 1420J 1200 NJ 1200 NJ 1200 NJ
+preplace netloc ov5640_camera_fronte_0_cam_reset_n 1 3 4 1430J 1220 NJ 1220 NJ 1220 NJ
+preplace netloc ov5640_camera_fronte_0_pixel_clk 1 3 2 1410 1460 1840J
+preplace netloc ov5640_camera_fronte_0_pixel_reset_n 1 3 2 1390 1470 1870
+preplace netloc ov5640_camera_fronte_0_pixel_rgb565 1 3 1 1420 1220n
+preplace netloc ov5640_camera_fronte_0_pixel_valid 1 3 1 1400 1240n
+preplace netloc ov5640_camera_fronte_0_pixel_x 1 3 1 1380 1260n
+preplace netloc ov5640_camera_fronte_0_pixel_y 1 3 1 1370 1280n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -30 660 460 460 860 1010 1420 660 1850 1460 2180
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 N 820
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 480 470 870 970 1430J 870 1860 870 2160J
+preplace netloc rst_ps7_0_100M_peripheral_reset 1 2 2 840 980 1480
+preplace netloc ov5640_camera_fronte_0_camera_init_done 1 2 2 900 1030 1330
+preplace netloc ov5640_camera_fronte_0_camera_init_error 1 2 2 890 1040 1340
+preplace netloc ov5640_camera_fronte_0_camera_chip_id_valid 1 2 2 930 990 1350
+preplace netloc ov5640_camera_fronte_0_camera_chip_id 1 2 2 880 1690 1330
+preplace netloc ov5640_camera_fronte_0_camera_frame_counter 1 2 2 920 1000 1360
+preplace netloc axi_bram_ctrl_new_0_BRAM_PORTA 1 3 1 N 440
+preplace netloc axi_bram_ctrl_old_0_BRAM_PORTA 1 3 1 1360 860n
+preplace netloc axi_smc_M00_AXI 1 2 1 850 420n
+preplace netloc axi_smc_M01_AXI 1 2 1 850 550n
+preplace netloc axi_smc_M02_AXI 1 2 1 830 560n
+preplace netloc axi_smc_M03_AXI 1 2 4 830J 1680 NJ 1680 1860J 1280 2150
+preplace netloc axi_smc_vdma_M00_AXI 1 0 6 -10 940 NJ 940 NJ 940 1410J 860 NJ 860 2150
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 4 3 1870 150 NJ 150 2530
+preplace netloc axis_data_fifo_0_M_AXIS 1 5 1 N 1370
+preplace netloc processing_system7_0_DDR 1 1 6 450J -10 NJ -10 NJ -10 NJ -10 NJ -10 2540J
+preplace netloc processing_system7_0_FIXED_IO 1 1 6 450J 960 NJ 960 1440J 890 NJ 890 NJ 890 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 540n
+preplace netloc rgb565_axis_source_0_M_AXIS_VIDEO 1 4 1 N 1340
+levelinfo -pg 1 -50 220 650 1130 1670 2010 2350 2570
+pagesize -pg 1 -db -bbox -sgen -170 -20 2710 1700
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_ps7_cnt":"1"
+}
